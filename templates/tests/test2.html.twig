@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+    {{ form(form) }}
+    {% if fizzBuzz %}
+        <p><b>FizzBuzz Generado:</b> {{ fizzBuzz }}</p>
+    {% endif %}
+{% endblock %}
